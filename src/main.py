@@ -50,7 +50,7 @@ def extract_reviews(apps):
             all_reviews.append(r)
 
     with open(f"{RAW_PATH}/apps_reviews.json", "w", encoding="utf-8") as f:
-        json.dump(all_reviews, f, ensure_ascii=False, indent=2)
+        json.dump(all_reviews, f, ensure_ascii=False, indent=2,default=str)
 
 
 # 2. Transformation
