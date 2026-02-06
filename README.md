@@ -1,4 +1,4 @@
-# Data-Engineering-Lab
+# Data-Engineering-Lab (Hamza Laraisse)
 
 
 Feedback:
@@ -9,3 +9,8 @@ Feedback:
 - For a cleaner code always separate layers. For instance, in your source folder, have a code file for capture, another for transformation, and another for serving
   
 - Please add a screenshot of your dashboard to the readmefile 
+
+<img src="images/app_performance.png" alt="Alt text" width="200"/>
+<img src="images/rating_trend.png" alt="Alt text" width="200"/>
+<img src="images/worst_apps.png" alt="Alt text" width="200"/>
+
