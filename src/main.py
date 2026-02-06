@@ -4,7 +4,7 @@ from capture import extract_apps, extract_reviews_paginated
 from transform import transform_apps, transform_reviews
 from serve import create_app_level_kpis, create_daily_metrics
 from dashboard import run_dashboard
-
+import os
 
 def main():
     print('extracting apps')

@@ -2,12 +2,14 @@
 
 import json
 import os
+import pandas as pd
 from google_play_scraper import search, app, reviews, Sort
 
 RAW_PATH = "../data/raw"
 KEYWORD = "AI note taking"
 
 os.makedirs(RAW_PATH, exist_ok=True)
+
 
 
 def extract_apps(n_apps=20):
@@ -28,7 +30,12 @@ def extract_apps(n_apps=20):
     return apps
 
 
-def extract_reviews_paginated(apps, max_pages=3, page_size=100):
+def extract_reviews_paginated(
+    apps,
+    max_pages=3,
+    page_size=100,
+    output_file="apps_reviews.json"
+):
     all_reviews = []
 
     for a in apps:
@@ -55,7 +62,7 @@ def extract_reviews_paginated(apps, max_pages=3, page_size=100):
             if continuation_token is None:
                 break
 
-    with open(f"{RAW_PATH}/apps_reviews.json", "w", encoding="utf-8") as f:
+    with open(f"{RAW_PATH}/{output_file}", "w", encoding="utf-8") as f:
         json.dump(
             all_reviews,
             f,
@@ -63,3 +70,21 @@ def extract_reviews_paginated(apps, max_pages=3, page_size=100):
             indent=2,
             default=str
         )
+
+
+
+def ingest_reviews_from_csv(
+    csv_path,
+    output_file="apps_reviews_batch2.json"
+):
+    df = pd.read_csv(csv_path)
+
+    # store as raw JSON to keep pipeline consistent
+    json_path = f"{RAW_PATH}/{output_file}"
+    df.to_json(
+        json_path,
+        orient="records",
+        force_ascii=False
+    )
+
+    return output_file

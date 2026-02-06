@@ -6,16 +6,16 @@
     "summary": "Understand anything with a personalized AI research assistant",
     "installs": "10,000,000+",
     "minInstalls": 10000000,
-    "realInstalls": 12049000,
-    "score": 4.8276467,
-    "ratings": 128843,
+    "realInstalls": 12098673,
+    "score": 4.828098,
+    "ratings": 128871,
     "reviews": 1624,
     "histogram": [
       2244,
       779,
       1570,
-      7664,
-      116549
+      7641,
+      116611
     ],
     "price": 0,
     "free": true,
@@ -78,15 +78,15 @@
     "installs": "1,000,000+",
     "minInstalls": 1000000,
     "realInstalls": 1877625,
-    "score": 4.7417116,
-    "ratings": 247459,
+    "score": 4.7421093,
+    "ratings": 247499,
     "reviews": 726,
     "histogram": [
-      2670,
-      2670,
-      8385,
-      28416,
-      205276
+      2651,
+      2651,
+      8366,
+      28379,
+      205391
     ],
     "price": 0,
     "free": true,
@@ -146,14 +146,14 @@
     "minInstalls": 5000000,
     "realInstalls": 5689204,
     "score": 4.3064184,
-    "ratings": 25899,
+    "ratings": 25900,
     "reviews": 4353,
     "histogram": [
       2840,
       667,
       936,
       2706,
-      18740
+      18741
     ],
     "price": 0,
     "free": true,
@@ -211,14 +211,14 @@
     "minInstalls": 5000000,
     "realInstalls": 6564794,
     "score": 4.340807,
-    "ratings": 63408,
+    "ratings": 63410,
     "reviews": 353,
     "histogram": [
       6234,
       1414,
-      3953,
+      3954,
       4531,
-      47188
+      47189
     ],
     "price": 0,
     "free": true,
@@ -285,15 +285,15 @@
     "installs": "500,000+",
     "minInstalls": 500000,
     "realInstalls": 527244,
-    "score": 4.738839,
-    "ratings": 27287,
+    "score": 4.74,
+    "ratings": 27305,
     "reviews": 267,
     "histogram": [
-      609,
-      121,
-      487,
-      3349,
-      22718
+      603,
+      115,
+      481,
+      3332,
+      22754
     ],
     "price": 0,
     "free": true,
@@ -364,16 +364,16 @@
     "summary": "The paper-like writing you love, now with AI superpowers. Note-taking, evolved.",
     "installs": "5,000,000+",
     "minInstalls": 5000000,
-    "realInstalls": 5808053,
+    "realInstalls": 5815080,
     "score": 4.5930233,
-    "ratings": 24518,
+    "ratings": 24517,
     "reviews": 523,
     "histogram": [
       1137,
       142,
       1137,
-      2702,
-      19384
+      2701,
+      19383
     ],
     "price": 0,
     "free": true,
@@ -449,14 +449,14 @@
     "minInstalls": 100000,
     "realInstalls": 302628,
     "score": 4.63,
-    "ratings": 4162,
+    "ratings": 4166,
     "reviews": 74,
     "histogram": [
       203,
       77,
       119,
       203,
-      3531
+      3534
     ],
     "price": 0,
     "free": true,
@@ -516,14 +516,14 @@
     "minInstalls": 10000000,
     "realInstalls": 34002848,
     "score": 4.675278,
-    "ratings": 333772,
+    "ratings": 333778,
     "reviews": 4436,
     "histogram": [
-      12476,
+      12475,
       4897,
       8162,
       27348,
-      280841
+      280849
     ],
     "price": 0,
     "free": true,
@@ -596,14 +596,14 @@
     "minInstalls": 1000000,
     "realInstalls": 2919511,
     "score": 4.58,
-    "ratings": 21591,
+    "ratings": 21592,
     "reviews": 177,
     "histogram": [
-      858,
+      859,
       417,
-      858,
-      2576,
-      16831
+      859,
+      2577,
+      16832
     ],
     "price": 0,
     "free": true,
@@ -671,14 +671,14 @@
     "minInstalls": 100000,
     "realInstalls": 158337,
     "score": 4.576923,
-    "ratings": 2109,
+    "ratings": 2112,
     "reviews": 9,
     "histogram": [
       135,
       0,
       27,
       297,
-      1649
+      1651
     ],
     "price": 0,
     "free": true,
@@ -1185,14 +1185,14 @@
     "minInstalls": 500000,
     "realInstalls": 539043,
     "score": 4.51,
-    "ratings": 5795,
+    "ratings": 5797,
     "reviews": 53,
     "histogram": [
       386,
       38,
       270,
       463,
-      4558
+      4560
     ],
     "price": 0,
     "free": true,
