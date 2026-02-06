@@ -12,5 +12,5 @@ Feedback:
 
 <img src="images/app_performance.png" alt="Alt text" width="200"/>
 <img src="images/rating_trend.png" alt="Alt text" width="200"/>
-<img src="images/worst_app.png" alt="Alt text" width="200"/>
+<img src="images/worst_apps.png" alt="Alt text" width="200"/>
 
