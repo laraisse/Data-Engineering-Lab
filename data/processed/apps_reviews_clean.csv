@@ -1,11 +1,11 @@
-appId,appname,reviewId,userName,score,content,thumbsUpCount,at
-,,r_2001,Amina,5,Great transcription quality.,4,2025-02-01 09:10:00
-,,r_2002,Youssef,2,Too expensive for premium.,1,2025-02-01 10:45:00
-,,r_2003,Sara,4,Clean UI and fast.,3,2025-02-01 11:30:00
-,,r_2004,Omar,2,Crashes sometimes.,0,2025-02-01 12:00:00
-,,r_2005,Leila,5,Amazing features!,5,2025-02-02 08:20:00
-,,r_2006,Hamza,3,Needs more languages.,2,2025-02-02 09:15:00
-,,r_2007,Nadia,1,Stopped syncing.,0,2025-02-02 10:00:00
-,,r_2008,Rachid,2,Battery drain issue.,0,2025-02-02 10:00:00
-,,r_2002,Youssef,2,Too expensive for premium.,1,2025-02-01 10:45:00
-,,r_2009,Kenza,3,Promising but buggy.,1,2025-02-02 11:30:00
+appId,appName,reviewId,userName,score,content,thumbsUpCount,at
+com.otter.ai,Otter AI,r_2101,Imane,,Love it!,2.0,2025-02-10 09:00:00
+com.otter.ai,Otter AI,r_2102,Ali,-1.0,Worst update ever.,0.0,2025-02-10 09:30:00
+com.notewise.ai,Notewise,r_2103,Salma,3.0,Okay app.,1.0,
+com.notewise.ai,Notewise,r_2104,Mehdi,4.0,,0.0,2025-02-10 10:00:00
+com.notewise.ai,Notewise,r_2105,Hajar,,Pretty useful.,2.0,2025-02-10 10:15:00
+com.otter.ai,Otter AI,r_2106,Yahya,5.0,Excellent transcription.,5.0,2025-02-10 10:30:00
+com.otter.ai,Otter AI,r_2107,Meryem,2.0,Slow sync.,0.0,2025-02-10 11:00:00
+com.newnote.ai,NewNote,r_2108,Samir,4.0,Promising.,1.0,2025-02-10 11:30:00
+com.newnote.ai,NewNote,r_2109,Aya,0.0,Terrible UX.,0.0,2025-02-10 12:00:00
+com.newnote.ai,NewNote,r_2110,Noor,1.0,Crashes often.,3.0,2025-02-10 12:30:00

@@ -81,10 +81,12 @@ def ingest_reviews_from_csv(
 
     # store as raw JSON to keep pipeline consistent
     json_path = f"{RAW_PATH}/{output_file}"
-    df.to_json(
-        json_path,
+    js = df.to_json(
         orient="records",
         force_ascii=False
     )
+    parsed = json.loads(js)
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(parsed, f, ensure_ascii=False, indent=2,default=str)
 
     return output_file
