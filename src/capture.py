@@ -4,6 +4,7 @@ import json
 import os
 import pandas as pd
 from google_play_scraper import search, app, reviews, Sort
+import duckdb
 
 RAW_PATH = "../data/raw"
 KEYWORD = "AI note taking"

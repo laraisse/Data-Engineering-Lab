@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/.idea/queries/Query.sql" value="c3de2976-b99b-4bf5-9ef4-b1aafd61d0b1" />
+    <file url="file://$PROJECT_DIR$/.idea/queries/Query_1.sql" value="16b30437-dbe6-417c-afaf-999c14e467b9" />
+    <file url="file://$PROJECT_DIR$/dbt_project/models/staging/stg_apps.sql" value="16b30437-dbe6-417c-afaf-999c14e467b9" />
+  </component>
+</project>
