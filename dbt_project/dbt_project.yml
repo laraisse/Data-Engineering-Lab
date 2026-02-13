@@ -1,6 +1,6 @@
 name: 'playstore_analytics'
 version: '1.0.0'
-profile: 'your_project_name'
+profile: 'Data-Engineering-Lab'
 
 model-paths: ["models"]
 seed-paths: ["seeds"]
