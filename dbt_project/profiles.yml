@@ -1,4 +1,4 @@
-your_project_name:
+Data-Engineering-Lab:
   outputs:
     dev:
       type: duckdb
