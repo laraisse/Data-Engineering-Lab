@@ -1,10 +1,10 @@
 with source as (
     select distinct
-        category
+        genre
     from {{ ref('stg_playstore_apps') }}
-    where category is not null
+    where genre is not null
 )
 select
-    {{ dbt_utils.generate_surrogate_key(['category']) }} as category_key,
-    category                                             as category_name
+    md5(coalesce(genre, '')) as category_key,
+    genre                                             as category_name
 from source

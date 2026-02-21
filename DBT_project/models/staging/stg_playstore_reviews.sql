@@ -10,7 +10,7 @@ select
     userName::varchar            as user_name,
     score::integer               as rating,
     content::varchar             as review_text,
-    thumbsUpCount::boolean       as thumbsUpCount,
+    thumbsUpCount::integer       as thumbsUpCount,
     "at"::timestamp              as review_date
 from raw_reviews
 where reviewId is not null

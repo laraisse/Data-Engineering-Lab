@@ -5,6 +5,6 @@ with source as (
     where developer_name is not null
 )
 select
-    {{ dbt_utils.generate_surrogate_key(['developer_name']) }} as developer_key,
+    md5(coalesce(developer_name, '')) as developer_key,
     developer_name
 from source
