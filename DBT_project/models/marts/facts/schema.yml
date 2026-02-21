@@ -1,0 +1,62 @@
+version: 2
+
+models:
+
+  - name: fact_reviews
+    description: "Fact table at grain: one row per user review for one app on one date."
+    columns:
+
+      - name: review_key
+        description: "Surrogate key hashed from review_id."
+        tests:
+          - unique
+          - not_null
+
+      - name: review_id
+        description: "Natural key from the raw reviews dataset."
+        tests:
+          - unique
+          - not_null
+
+      - name: app_key
+        description: "Foreign key to dim_apps."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_apps')
+              field: app_key
+              config:
+                severity: error
+
+      - name: developer_key
+        description: "Foreign key to dim_developers."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_developers')
+              field: developer_key
+              config:
+                severity: error
+
+      - name: date_key
+        description: "Foreign key to dim_date (YYYYMMDD integer format)."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
+              config:
+                severity: error
+
+      - name: rating
+        description: "User rating score (1-5)."
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
+
+      - name: user_name
+        description: "Name of the reviewer."
+
+      - name: review_text
+        description: "Full text of the review."

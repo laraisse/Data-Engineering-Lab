@@ -10,7 +10,6 @@ with source as (
     where app_id is not null
 ),
 
--- Join category and developer keys to build the hierarchy
 with_keys as (
     select
         s.app_id,
