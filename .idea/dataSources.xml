@@ -15,5 +15,12 @@
       <jdbc-url>jdbc:duckdb:$PROJECT_DIR$/data/raw/apps_metadata.json</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="apps_reviews.json [2]" uuid="aa284268-8d5f-4f61-9320-197af44b822b">
+      <driver-ref>duckdb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.duckdb.DuckDBDriver</jdbc-driver>
+      <jdbc-url>jdbc:duckdb:$PROJECT_DIR$/data/raw/apps_reviews.json</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
