@@ -1,5 +1,3 @@
-{{ config(materialized='table', schema='main') }}
-
 with source as (
     select distinct
         app_id,

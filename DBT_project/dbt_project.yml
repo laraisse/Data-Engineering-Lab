@@ -33,9 +33,13 @@ models:
   DBT_project:
     staging:
       +materialized: view
+      +schema: staging
     marts:
       +materialized: table
+      +schema: marts
       dimensions:
         +materialized: table
+        +schema: dimensions
       facts:
         +materialized: table
+        +schema: facts

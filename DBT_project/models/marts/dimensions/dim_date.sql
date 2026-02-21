@@ -1,6 +1,3 @@
-{{ config(materialized='table', schema='main') }}
-
--- Anchor the date range on actual review activity
 with date_bounds as (
     select
         cast(min(review_date) as date) as min_date,
