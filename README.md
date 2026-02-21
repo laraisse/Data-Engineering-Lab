@@ -10,7 +10,7 @@ Feedback:
   
 - Please add a screenshot of your dashboard to the readmefile 
 
-<img src="images/app_performance.png" alt="Alt text" width="200"/>
-<img src="images/rating_trend.png" alt="Alt text" width="200"/>
-<img src="images/worst_apps.png" alt="Alt text" width="200"/>
+<img src="LAB 1/images/app_performance.png" alt="Alt text" width="200"/>
+<img src="LAB 1/images/rating_trend.png" alt="Alt text" width="200"/>
+<img src="LAB 1/images/worst_apps.png" alt="Alt text" width="200"/>
 
