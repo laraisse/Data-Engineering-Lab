@@ -1,3 +1,6 @@
+{{ config(materialized='table', schema='main') }}
+
+-- Anchor the date range on actual review activity
 with date_bounds as (
     select
         cast(min(review_date) as date) as min_date,
@@ -5,7 +8,8 @@ with date_bounds as (
     from {{ ref('stg_playstore_reviews') }}
 ),
 
-    date_spine as (
+-- Generate one row per day between min and max review date
+date_spine as (
     select
         unnest(
             generate_series(
@@ -17,6 +21,7 @@ with date_bounds as (
 )
 
 select
+    -- Kimball-style integer key: YYYYMMDD
     cast(strftime(date_day, '%Y%m%d') as integer)   as date_key,
     date_day                                          as date,
     year(date_day)                                    as year,

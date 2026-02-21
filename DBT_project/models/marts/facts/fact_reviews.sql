@@ -1,3 +1,5 @@
+{{ config(materialized='table', schema='main') }}
+
 with reviews as (
     select *
     from {{ ref('stg_playstore_reviews') }}

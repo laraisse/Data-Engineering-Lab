@@ -1,3 +1,5 @@
+{{ config(materialized='table', schema='main') }}
+
 with source as (
     select distinct
         app_id,
@@ -13,9 +15,9 @@ with source as (
 with_keys as (
     select
         s.app_id,
-        s.title                                                          as app_name,
+        s.title          as app_name,
         s.installs,
-        s.ratings                                                        as catalog_rating,
+        s.ratings        as catalog_rating,
         c.category_key,
         d.developer_key
     from source s

@@ -1,3 +1,5 @@
+{{ config(materialized='table', schema='main') }}
+
 with source as (
     select distinct
         genre
@@ -6,5 +8,5 @@ with source as (
 )
 select
     md5(coalesce(genre, '')) as category_key,
-    genre                                             as category_name
+    genre                    as category_name
 from source
