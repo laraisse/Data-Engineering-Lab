@@ -1,7 +1,27 @@
-with reviews as (
+{{ config(
+    materialized='incremental',
+    unique_key='review_id',
+    on_schema_change='fail'
+) }}
+
+with {% if is_incremental() %}
+
+-- Get the max review date already in the table
+max_date as (
+    select max(review_date) as last_review_date
+    from {{ this }}
+),
+
+{% endif %}
+
+reviews as (
     select *
     from {{ ref('stg_playstore_reviews') }}
     where review_id is not null
+
+    {% if is_incremental() %}
+        and review_date > (select last_review_date from max_date)
+    {% endif %}
 ),
 
 -- Retrieve surrogate keys from dimensions using natural keys
@@ -42,9 +62,10 @@ select
     date_key,
     user_name,
     rating,
-    review_text
+    review_text,
+    review_date
 from joined
 where
-    app_key     is not null
-    and date_key    is not null
+    app_key       is not null
+    and date_key      is not null
     and developer_key is not null
